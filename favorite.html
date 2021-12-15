@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>replit</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+	 crossorigin="anonymous">
+	<link href="index.css" rel="stylesheet" type="text/css" media="screen"/>
+	<script src="https://kit.fontawesome.com/113d2fc574.js" crossorigin="anonymous">
+	</script>
+
+</head>
+
+<body>
+	<!-- Nav Bar -->
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Make Friends!</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/favorite.html">Favorite</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+<div class="container">
+  <div class="search-row my-2">
+      <!-- Search Bar -->
+    <form class="d-flex" id='search-form'>
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id='search-input'>
+    <button class="btn btn-dark search-btn" type="submit">Search</button>
+	  </form>
+  </div>
+  <div class="user-list justify-content-center">
+    <!-- user card -->
+  </div>
+</div>
+
+<!-- 分頁 -->
+<footer class="mt-4 d-flex justify-content-around">
+  <nav aria-label="Page navigation example">
+  <ul class="pagination paginator justify-content-center">
+  </ul>
+</nav>
+</footer>
+
+
+
+
+<!-- User Modal -->
+<div class="modal" tabindex="-1" id="user-modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title user-modal-name" id='user-name'>Jhon</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id='user-Modal'>
+        <div class="row ">
+          <img src="https://randomuser.me/api/portraits/men/88.jpg" alt="" id="modal-user-image" class="col-6 user-modal-img">
+          <div class="col-6 d-flex flex-column justify-content-center" id='user-info'>
+            <p id='user-age' class="user-modal-age">30</p>
+            <p id='user-gender' class="user-modal-gender">男</p>
+            <p id='user-region' class="user-modal-region">台灣</p>
+            <p id='user-birthday' class="user-modal-birthday">1990.01.01</p>
+            <p id='user-email' class="user-modal-email"></p>
+          </div>
+        </div>
+      </div>
+       <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="/favorite.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js">
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js">
+	</script>
+
+  </body>
+</html>

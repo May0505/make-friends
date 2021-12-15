@@ -1,0 +1,153 @@
+
+
+/* .card:hover {
+  transform: scale(1.04, 1.04);
+  transition: transform 0.8s ease;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+#img {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+} */
+
+body {
+  background-color: #ECF5FF;
+
+}
+
+.card {
+  width: 20rem;
+  font-size: 16px;
+  color: rgb(134, 150, 165);
+  border-style: none;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+  /* position: relative; */
+}
+
+.modal {
+  font-size: 16px;
+  color: rgb(134, 150, 165);
+}
+
+#user-name {
+  font-size: 20px;
+}
+
+.user-info{
+  padding: 10px;
+}
+
+#user-img {
+  border-radius: 25px;
+  margin: 0;
+  height: 20rem;
+}
+
+.favorite-user-img:hover {
+  cursor: pointer;
+}
+
+#modal-user-image {
+  border-radius: 50%;
+}
+
+.fa-times {
+  color: #00AEAE;
+}
+
+
+.fa-heart {
+  color: #FF5151;
+  margin: 7px 0;
+}
+
+.circle {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2);
+}
+
+.navbar {
+  background-color: rgb(109, 164, 219);
+}
+
+.search-btn:hover {
+  background-color: rgb(109, 164, 219);
+}
+
+.search-btn {
+  background-color: rgba(109, 164, 219, 0.651);
+  border-style: none;
+}
+
+.page-link {
+  background-color: rgba(109, 164, 219, 0.651);
+  border-style: none;
+  color: #fff;
+}
+
+.page-link:hover {
+  background-color: rgb(109, 164, 219);
+  color: #fff;
+}
+
+.page-item.active .page-link  {
+  background-color: rgb(109, 164, 219);
+}
+
+@media screen and (min-width: 1201px) {
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+ }
+ .user-card {
+  width: 18rem;
+ }
+.search-row {
+  padding: 0 25rem;
+ }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+ .user-list {
+  display: flex;
+  flex-wrap: wrap;
+ }
+ .user-card {
+  width: 18rem;
+ }
+ .search-row {
+  padding: 0 20rem;
+ }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+ }
+ .user-card {
+  width: 18rem;
+ }
+  .search-row {
+  padding: 0 10rem;
+ }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+ }
+ .user-card {
+  width: 18rem;
+ }
+  .search-row {
+  padding: 0 5rem;
+ }
+}
